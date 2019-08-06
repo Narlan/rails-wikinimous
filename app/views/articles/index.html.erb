@@ -1,0 +1,6 @@
+<h1>Index</h1>
+<%= link_to "New article", new_path %>
+
+<% @articles.each do |article| %>
+  <h3><%= link_to article.title, show_path(article) %></h3>
+<% end %>
